@@ -1,0 +1,26 @@
+La info completa está en el README.md
+
+## 1.- Downloading a presentation
+The first script will download the presentation assets locally:
+
+```
+./download.py presentation_url outdir
+```
+
+## 2.- Create a GES project
+
+```
+./make-xges.py outdir presentation.xges
+```
+
+The project can be previewed using the `ges-launch-1.0` command line tool:
+
+```
+ges-launch-1.0 --load presentation.xges
+```
+
+## 3.- Render Video
+
+```
+ges-launch-1.0 --load presentation.xges -o presentation.mp4
+```
